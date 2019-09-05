@@ -1,10 +1,8 @@
 import java.awt.Color;
 import java.awt.Rectangle;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 
 public class Sprite {
-
+	
 	private int xPosition, yPosition;
 	private int xVelocity, yVelocity;
 	private int width, height;
@@ -45,7 +43,7 @@ public class Sprite {
 		}
 	}
 	
-	public void setXVeloctiy(int newXVelocity) {
+	public void setXVelocity(int newXVelocity) {
 		xVelocity = newXVelocity;
 	}
 	
@@ -76,7 +74,6 @@ public class Sprite {
 	}
 
 	public Rectangle getRectangle() {
-		return new Rectangle(getXPosition(), getYPosition(), getWidth(),
-				getHeight());
+		return new Rectangle(getXPosition(), getYPosition(), getWidth(), getHeight());
 	}
 }
